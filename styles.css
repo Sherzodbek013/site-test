@@ -1,0 +1,100 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.auth-link {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Стили для формы входа и регистрации */
+#auth {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#login-section, #register-section {
+    width: 45%;
+}
+
+#login-section form, #register-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-section form label, #register-section form label {
+    margin-bottom: 5px;
+}
+
+#login-section form input, #register-section form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#login-section form button, #register-section form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#login-section form button:hover, #register-section form button:hover {
+    background-color: #555;
+}
+
+/* Анимация для корзины */
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.fly-animation {
+    transform: translateX(calc(100vw - 50px)) translateY(-100vh);
+    opacity: 0;
+}
